@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Color & Design Recommender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Fashion Color & Design Recommender</h1>
+    <p>Discover colors and styles that match your occasion.</p>
+</header>
+
+<main class="container">
+
+    <div class="form-card">
+
+        <h2>Create Your Style</h2>
+
+        <label for="occasion">Occasion</label>
+        <select id="occasion">
+            <option value="casual">Casual</option>
+            <option value="office">Office</option>
+            <option value="party">Party</option>
+            <option value="wedding">Wedding</option>
+            <option value="festival">Festival</option>
+        </select>
+
+        <label for="season">Season</label>
+        <select id="season">
+            <option value="summer">Summer</option>
+            <option value="winter">Winter</option>
+            <option value="spring">Spring</option>
+            <option value="rainy">Rainy</option>
+        </select>
+
+        <label for="clothing">Clothing Type</label>
+        <select id="clothing">
+            <option value="dress">Dress</option>
+            <option value="saree">Saree</option>
+            <option value="kurti">Kurti</option>
+            <option value="shirt">Shirt</option>
+            <option value="tshirt">T-Shirt</option>
+            <option value="suit">Suit</option>
+        </select>
+
+        <label for="color">Preferred Color</label>
+        <input type="color" id="color" value="#c2185b">
+
+        <button onclick="recommendStyle()">
+            Get Recommendation
+        </button>
+
+    </div>
+
+    <div class="result-card" id="result">
+
+        <h2>Your Fashion Recommendation</h2>
+
+        <div id="colorPreview" class="color-preview"></div>
+
+        <h3 id="styleResult">
+            Select your preferences to get a recommendation.
+        </h3>
+
+        <p id="fabricResult"></p>
+        <p id="accessoryResult"></p>
+
+        <h3>Recommended Color Palette</h3>
+
+        <div class="palette">
+            <div class="palette-color" id="color1"></div>
+            <div class="palette-color" id="color2"></div>
+            <div class="palette-color" id="color3"></div>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>Fashion Color & Design Recommender</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
